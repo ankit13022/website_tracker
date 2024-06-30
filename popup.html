@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Productivity Tracker</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 10px;
+        background-color: black;
+        color: #ddd;
+        min-width: 250px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+
+      #clearButton {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #f44336;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      #clearButton:hover {
+        background-color: #d32f2f;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Productivity Tracker</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Website</th>
+          <th>Time Spent (s)</th>
+        </tr>
+      </thead>
+      <tbody id="report"></tbody>
+    </table>
+    <button id="clearButton">Clear</button>
+    <script src="popup.js"></script>
+  </body>
+</html>
